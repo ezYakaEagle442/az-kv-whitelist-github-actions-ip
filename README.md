@@ -30,3 +30,9 @@ do
   fi
 done
 ```
+
+This will ends badly with ... : 
+```console
+(BadRequest) Too many items found at properties.networkAcls.ipRules: 1001, maximum is 1000.
+Code: BadRequest
+```
