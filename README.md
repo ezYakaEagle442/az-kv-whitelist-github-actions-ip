@@ -26,7 +26,7 @@ do
   if [[ $byte1.$byte2.$byte3.$byte4 =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ && $byte1 -ge 0 && $byte1 -le 255 && $byte2 -ge 0 && $byte2 -le 255 && $byte3 -ge 0 && $byte3 -le 255 && $byte4 -ge 0 && $byte4 -le 255 ]]
     then
       # echo "Found Action IP Cidr $IP_CIDR"
-      az keyvault network-rule add  --ip-address $IP_CIDR --name kv-petcliasc42
+      az keyvault network-rule add  --ip-address $IP_CIDR --name <your KV name kv-xxxx>
   fi
 done
 ```
